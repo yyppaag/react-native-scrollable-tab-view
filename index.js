@@ -21,7 +21,7 @@ const DefaultTabBar = require('./DefaultTabBar');
 const ScrollableTabBar = require('./ScrollableTabBar');
 
 const AnimatedViewPagerAndroid = Platform.OS === 'android' ?
-  Animated.createAnimatedComponent(PagerView) :
+  Animated.createAnimatedComponent(PagerView.default) :
   undefined;
 
 const ScrollableTabView = createReactClass({
